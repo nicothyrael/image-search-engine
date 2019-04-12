@@ -21,7 +21,8 @@ output = open(args["index"], "w")
 for imagePath in glob.glob(args["dataset"] + "/**/*.jpg", recursive=True):
     # extract the image ID (i.e. the unique filename) from the image
     # path and load the image itself
-    imageID = imagePath[imagePath.rfind("/") + 1:]
+    #imageID = imagePath[imagePath.rfind("/") + 1:]
+    imageID = imagePath
     image = cv2.imread(imagePath)
 
     # describe the image
