@@ -45,7 +45,6 @@ results = sorted([(v, k) for (k, v) in results.items()])
 # return our (limited) results
 return results[:limit]
 
-
 def chi2_distance(self, histA, histB, eps=1e-10):
     # compute the chi-squared distance
     d = 0.5 * np.sum([((a - b) ** 2) / (a + b + eps)
